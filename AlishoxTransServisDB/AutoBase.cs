@@ -13,7 +13,7 @@ namespace AlishoxTransServisDB
     {
         private DateTime? licenseDate;
         private DateTime? insuranceDate;
-
+//123
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Id { get; set; }
 
