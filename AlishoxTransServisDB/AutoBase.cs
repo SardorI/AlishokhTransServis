@@ -5,7 +5,6 @@ namespace AlishoxTransServisDB
     using System.ComponentModel;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
     using System.Runtime.CompilerServices;
 
     [Table("AutoBase")]
@@ -13,17 +12,13 @@ namespace AlishoxTransServisDB
     {
         private DateTime? licenseDate;
         private DateTime? insuranceDate;
-//123
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+
         public int Id { get; set; }
 
-        [StringLength(50)]
         public string Name { get; set; }
 
-        [StringLength(50)]
         public string Number { get; set; }
 
-        [Column(TypeName = "date")]
         public DateTime? LicenseDate
         {
             get => licenseDate;
@@ -35,7 +30,6 @@ namespace AlishoxTransServisDB
             }
         }
 
-        [Column(TypeName = "date")]
         public DateTime? InsuranceDate
         {
             get => insuranceDate;

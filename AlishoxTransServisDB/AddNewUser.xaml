@@ -20,9 +20,9 @@
             <TextBox x:Name="nameTB" Height="23" TextWrapping="Wrap" Text="" Width="200"/>
             <TextBlock TextWrapping="Wrap" Text="Гос. номер машины:" Height="23" Width="160"/>
             <TextBox x:Name="numberTB" Height="23" TextWrapping="Wrap" Text="" Width="200"/>
-            <TextBlock TextWrapping="Wrap" Text="Лицензия автовладельца:" Height="23" Width="160"/>
+            <TextBlock Text="Лицензия: (DateTime)" Height="23" Width="160"/>
             <TextBox x:Name="licenseDateTB" Height="23" TextWrapping="Wrap" Text="" Width="200"/>
-            <TextBlock TextWrapping="Wrap" Text="Страховой полюс:" Height="23" Width="160"/>
+            <TextBlock Text="Страховой: (DateTime)" Height="23" Width="160"/>
             <TextBox x:Name="insuranceDateTB" Height="23" TextWrapping="Wrap" Text="" Width="200"/>
         </WrapPanel>
         <Button Height="23" Width="150"  Content="Добавить" Click="Button_Click" Margin="0,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" />

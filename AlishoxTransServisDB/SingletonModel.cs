@@ -12,7 +12,7 @@ namespace AlishoxTransServisDB
     {
         private static SingletonModel instance;
         private ObservableCollection<AutoBase> autoBases;
-        private DatabaseContext db;
+        private ApplicationDbContext db;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -21,7 +21,7 @@ namespace AlishoxTransServisDB
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        public DatabaseContext DataBase { get => db; }
+        public ApplicationDbContext DataBase { get => db; }
 
         public ObservableCollection<AutoBase> AutoBases
         {
@@ -35,7 +35,7 @@ namespace AlishoxTransServisDB
 
         private SingletonModel()
         {         
-            db = new DatabaseContext();
+            db = new ApplicationDbContext();
             autoBases = new ObservableCollection<AutoBase>(db.AutoBase);
         }
 

@@ -29,14 +29,13 @@ namespace AlishoxTransServisDB
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (!CheckData())
-                return;
+            //if (!CheckData())
+            //    return;
 
-            var missingId = MissingId(model.AutoBases);
+            //var missingId = MissingId(model.AutoBases);
 
             model.AutoBases.Add(new AutoBase()
-            {
-                Id = missingId,
+            {               
                 Name = nameTB.Text,
                 Number = numberTB.Text,
                 LicenseDate = DateTime.Parse(licenseDateTB.Text),
@@ -44,7 +43,6 @@ namespace AlishoxTransServisDB
             });
             model.DataBase.AutoBase.Add(new AutoBase()
             {
-                Id = missingId,
                 Name = nameTB.Text,
                 Number = numberTB.Text,
                 LicenseDate = DateTime.Parse(licenseDateTB.Text),
